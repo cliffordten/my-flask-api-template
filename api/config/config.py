@@ -37,6 +37,7 @@ class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.getenv('PROD_DB_URL')
     DEBUG = False
     TESTING = False
+    # SQLALCHEMY_BINDS = {'docdb':'sqlite:///' + os.path.join(dbdir,  "docdb_"+str(datetime.date(datetime.now()))+'.db')}
 # SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(dbdir,  "docdb_"+str(datetime.date(datetime.now()))+'.db')
 
 config_by_name = dict(
