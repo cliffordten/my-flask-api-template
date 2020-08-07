@@ -7,8 +7,6 @@ from dotenv import load_dotenv
 from models.hello import HelloModel
 from utils.response import *
 
-from resources import setDocumentaiondb
-
 
 class Hello(Resource):
 
